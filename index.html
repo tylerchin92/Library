@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id = 'navbar'></div>
+
+        <div id="book-form"> 
+            <form id="form-container" onsubmit= "this.reset(); return false;">
+              <h2>Add a new book</h2>
+              <label for='new-title'>
+              <strong>Title</strong>
+              </label>
+              <input type="text" placeholder="Book Title" id ="new-title">
+              <label for="new-author">
+              <strong>Author</strong>
+              </label>
+              <input type="text" placeholder="Author" id ="new-author">
+              <label for="new-genre">
+                <strong>Genre</strong>
+                </label>
+              <input type="text" placeholder="Genre" id ="new-genre">
+              <label for="new-read">
+                <strong>Read?</strong>
+                </label>
+              <input type="checkbox" id ="read-status">
+              <button type = 'submit' class = 'btn' id = 'add-button'>Add Book</button>
+            </form>
+          </div>
+        <div id = 'book-table'>
+            <table id = 'container'>
+                <tr>
+                    <th class = "table-header">Book Title</th>
+                    <th class = "table-header">Author</th>
+                    <th class = "table-header">Genre</th>
+                    <th class = "table-header">Read</th>
+                    <th class = "table-header">Remove</th>
+                </tr>
+                <!--<tr>
+                    <td>Harry Potter</td>
+                    <td>JK Rowling</td>
+                    <td>Fantasy</td>
+                    <td><input type = 'button' value = 'Read' class = 'read-button'></td>
+                    <td><input type = 'button' value = 'Remove'></td>
+                </tr> -->
+            </table>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
